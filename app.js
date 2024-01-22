@@ -35,7 +35,7 @@ function numCorrect( ){ //lee el elemento del input y lo devuelve como un int
 }
 function initialConditions(){
     asignarElemento('h1','Juego del número secreto');
-    asignarElemento('p','Indica un numero del 1 al 10');// Indicar el mensaje inicial
+    asignarElemento('p',`Indica un numero del ${numeroMinimo} al ${numeroMaximo}`);// Indicar el mensaje inicial
     contEnCeros();//Reiniciar el contador
     numeroSecreto= getRandomArbitrary(numeroMinimo,numeroMaximo);//Generar el valor aleatorio
 }
